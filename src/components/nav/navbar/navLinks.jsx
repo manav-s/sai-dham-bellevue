@@ -43,16 +43,19 @@ export function NavLinks(props) {
     <NavLinksContainer>
       <LinksWrapper>
         <LinkItem>
-          <Link href="#">About us</Link>
+          <Link href="https://www.saiparivarfoundation.org/about.html" target={"_blank"}>Sai Baba</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Sai Baba</Link>
+          <Link href="https://www.saiparivarfoundation.org/guruji.html" target={"_blank"}>Guruji</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Calendar</Link>
+          <Link href="https://www.saiparivarfoundation.org/mission.html" target={"_blank"}>About us</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Guruji</Link>
+          <Link href="https://www.saiparivarfoundation.org/TempleParking.pdf" target={"_blank"}>Event Parking</Link>
+        </LinkItem>
+        <LinkItem>
+          <Link href="https://www.paypal.com/paypalme/SaiParivarFoundation" target={"_blank"}>Donate</Link>
         </LinkItem>
       </LinksWrapper>
     </NavLinksContainer>

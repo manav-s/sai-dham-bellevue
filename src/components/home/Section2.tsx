@@ -33,25 +33,28 @@ const Section2 = () => {
               Experience Sai Baba's Blessings
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Join us for prayers, community events, and spiritual growth.
-              Embrace the peace and blessings of Sai Baba.
+              Join us for special events, prayers, Archanas and cultural program.
+              Embrace the blessings of Sai Baba.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-              <button className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                Plan Your Visit
+              <button
+                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                Guru Purnima- July 20, 2014
               </button>
+              <span aria-hidden="true"><a
+                  href="https://www.saiparivarfoundation.org/Guru%20Purnima%2024.pdf"
+                  className="text-sm font-semibold leading-6 text-white"
+              >Detail →</a></span>
               <a
-                href="/learn-more"
-                className="text-sm font-semibold leading-6 text-white"
-              >
-                Learn more <span aria-hidden="true">→</span>
-              </a>
+                  href="https://www.saiparivarfoundation.org/TempleParking.pdf"
+                  className="text-sm font-semibold leading-6 text-white"
+              >Temple Parking</a>
             </div>
           </div>
           {/* Image of Sai Baba */}
           <div className="relative mt-16 lg:mt-8 lg:ml-auto lg:flex lg:items-center">
             <img
-              className="w-full max-w-lg rounded-md bg-white/5 ring-1 ring-white/10"
+                className="w-full max-w-lg rounded-md bg-white/5 ring-1 ring-white/10"
               src={BabaImage}
               alt="Sai Baba"
             />
