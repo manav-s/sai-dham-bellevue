@@ -29,13 +29,16 @@ const AboutUs = () => {
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                     <div className="lg:pr-8 lg:pt-4">
                         <div className="lg:max-w-lg">
-                            <p className="mt-2 text-3xl font-bold tracking-tight text-red-900 sm:text-4xl">
+                            <p className="mt-3 text-3xl font-bold tracking-tight text-red-900 sm:text-4xl">
                                 We are a non-profit organization registered in the state of Washington.
                             </p>
                             <p className="mt-6 text-lg leading-8 text-red-600">
-                                Shirdi Sai Baba was an Indian spiritual master and fakir, considered to be a saint, revered by both Hindu and Muslim devotees during and after his lifetime. According to accounts from his life, Sai Baba preached the importance of "realisation of the self" and criticised "love towards perishable things". His teachings concentrated on a moral code of love, forgiveness, helping others, charity, contentment, inner peace, and devotion to God and Guru.
+                                OUR MISSION: To spread Shirdi Sai Baba’s philosophy and teachings, Shraddha (devotion)
+                                and Saburi (patience).
                             </p>
-                            <br />
+                            <li>The Sai Age and be a part of Sai-ism, as He is the Master of the Age.</li>
+                            <li>Spread the message of love, purity and sanctifying the lives in the service of Lord Shirdi Sai.</li>
+                            <br/>
                             <h2 className="text-base font-semibold leading-7 text-orange-600">
                                 Activities
                             </h2>

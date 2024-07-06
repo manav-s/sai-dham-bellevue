@@ -53,7 +53,7 @@ export function MobileNavLinks(props) {
       {isOpen && (
         <LinksWrapper>
           <LinkItem>
-            <Link href="#">About us</Link>
+            <Link href="/">About us</Link>
           </LinkItem>
           <LinkItem>
             <Link href="#">Sai Baba</Link>

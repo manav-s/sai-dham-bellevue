@@ -43,7 +43,7 @@ export function NavLinks(props) {
     <NavLinksContainer>
       <LinksWrapper>
         <LinkItem>
-          <Link href="#">About us</Link>
+          <Link href="/AboutUs">About us</Link>
         </LinkItem>
         <LinkItem>
           <Link href="#">Sai Baba</Link>
