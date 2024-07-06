@@ -14,10 +14,10 @@ function Footer() {
           <div className="w-full md:w-1/3 mb-4 md:mb-0">
             <h2 className="text-xl font-bold mb-2">Follow Us</h2>
             <div className="flex space-x-4">
-              <a href="#" className="text-green-500 hover:text-green-400"> {/* WhatsApp */}
+              <a href="https://chat.whatsapp.com/GY0E24mpiiCLtDNf7cLWze" className="text-green-500 hover:text-green-400"> {/* WhatsApp */}
                 <FaWhatsapp className="w-6 h-6" />
               </a>
-              <a href="#" className="text-blue-500 hover:text-blue-400"> {/* Facebook */}
+              <a href="https://www.facebook.com/ShirdiSaiDhamBellevue" className="text-blue-500 hover:text-blue-400"> {/* Facebook */}
                 <FaFacebook className="w-6 h-6" />
               </a>
               <a href="#" className="text-gray-950 hover:text-gray-500"> {/* Google Maps */}
@@ -28,10 +28,10 @@ function Footer() {
           <div className="w-full md:w-1/3">
             <h2 className="text-xl font-bold mb-2">Quick Links</h2>
             <ul>
-              <li className="mb-2"><a href="#" className="text-gray-200 hover:text-white">Home</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-200 hover:text-white">Donate</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-200 hover:text-white">Volunteer</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-200 hover:text-white">Contact</a></li>
+              <li className="mb-2"><a href="/" className="text-gray-200 hover:text-white">Home</a></li>
+              <li className="mb-2"><a href="https://www.paypal.me/SaiParivarFoundation" className="text-gray-200 hover:text-white">Donate</a></li>
+              <li className="mb-2"><a href="/volunteer" className="text-gray-200 hover:text-white">Volunteer</a></li>
+              <li className="mb-2"><a href="/contact" className="text-gray-200 hover:text-white">Contact</a></li>
             </ul>
           </div>
         </div>

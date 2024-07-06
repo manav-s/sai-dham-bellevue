@@ -46,7 +46,7 @@ export function NavLinks(props) {
           <Link href="#">About us</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Sai Baba</Link>
+          <Link href="/sai-baba">Sai Baba</Link>
         </LinkItem>
         <LinkItem>
           <Link href="#">Calendar</Link>
