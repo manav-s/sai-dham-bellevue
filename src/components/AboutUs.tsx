@@ -1,5 +1,5 @@
 import React from "react";
-import Baba from "../assets/carousel/Carousel1.jpeg";
+import Baba from "../assets/images/Temple.jpg";
 
 import { FaBookOpen } from "react-icons/fa";
 

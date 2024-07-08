@@ -29,6 +29,8 @@ function Footer() {
             <h2 className="text-xl font-bold mb-2">Quick Links</h2>
             <ul>
               <li className="mb-2"><a href="#" className="text-gray-200 hover:text-white">Home</a></li>
+              <li className="mb-2"><a href="https://www.saiparivarfoundation.org/about.html" target={"_blank"}>Sai Baba</a></li>
+              <li className="mb-2"><a href="https://www.saiparivarfoundation.org/mission.html" target={"_blank"}>About us</a></li>
               <li className="mb-2"><a href="https://www.paypal.com/paypalme/SaiParivarFoundation"  target={"_blank"} className="text-gray-200 hover:text-white">Donate</a></li>
             </ul>
           </div>

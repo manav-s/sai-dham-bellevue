@@ -44,7 +44,7 @@ const Marginer = styled.div`
   height: 2em;
 `;
 
-export function MobileNavLinks(props) {
+export function MobileNavLinks() {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -53,13 +53,13 @@ export function MobileNavLinks(props) {
       {isOpen && (
         <LinksWrapper>
             <LinkItem>
-                <Link href="https://www.saiparivarfoundation.org/about.html" target={"_blank"}>Sai Baba</Link>
+                <Link href="/sai-baba">Sai Baba</Link>
             </LinkItem>
             <LinkItem>
                 <Link href="https://www.saiparivarfoundation.org/guruji.html" target={"_blank"}>Guruji</Link>
             </LinkItem>
             <LinkItem>
-                <Link href="https://www.saiparivarfoundation.org/mission.html" target={"_blank"}>About us</Link>
+                <Link href="/AboutUs">About Us</Link>
             </LinkItem>
             <LinkItem>
                 <Link href="https://www.saiparivarfoundation.org/TempleParking.pdf" target={"_blank"}>Event Parking</Link>
