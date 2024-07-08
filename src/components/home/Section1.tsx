@@ -62,15 +62,6 @@ const Section1 = () => {
                       </div>
                   ))}
                 </dl>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-red-900 sm:text-4xl">
-                  Paduka puja-
-                </p>
-                <h2 className="text-base font-semibold leading-7 text-orange-600">
-                  Happening This month
-                </h2>
-                <h4><a
-                    href="https://www.signupgenius.com/go/70A0F4BAAAC2FA5FE3-50079187-baba#d leading-6 text-white"
-                >Click for Details</a></h4>
               </div>
             </div>
             {/* Mandir Interior Image */}
@@ -78,9 +69,9 @@ const Section1 = () => {
               <img
                   src={BabaBlue}
                   alt="Mandir interior"
-                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
-                width={2432}
-                height={1442}
+                  className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+                  width={2432}
+                  height={1442}
               />
             </div>
           </div>
