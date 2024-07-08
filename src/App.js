@@ -5,8 +5,7 @@ import Home from "./components/home/Home.tsx";
 import Header from "./components/Header.tsx";
 import PageNotFound from './components/PageNotFound.tsx';
 import { Navbar } from "./components/nav/navbar";
-import AboutUs from "./components/AboutUs.tsx";
-
+import SaiBaba from "./components/sai-baba.tsx";
 
 function App() {
   return (
@@ -18,8 +17,8 @@ function App() {
           <Routes>
             <Route index element={<Home />} />
             <Route path="/" element={<Home />} />
-            <Route path="/AboutUs" element={<AboutUs />} />
-            <Route path="*" element={<PageNotFound />} /> 
+            <Route path="/sai-baba" element={<SaiBaba />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>
         <Footer />
