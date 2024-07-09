@@ -44,7 +44,7 @@ const Marginer = styled.div`
   height: 2em;
 `;
 
-export function MobileNavLinks(props) {
+export function MobileNavLinks() {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -52,18 +52,21 @@ export function MobileNavLinks(props) {
       <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
       {isOpen && (
         <LinksWrapper>
-          <LinkItem>
-            <Link href="#">About us</Link>
-          </LinkItem>
-          <LinkItem>
-            <Link href="#">Sai Baba</Link>
-          </LinkItem>
-          <LinkItem>
-            <Link href="#">Calendar</Link>
-          </LinkItem>
-          <LinkItem>
-            <Link href="#">Guruji</Link>
-          </LinkItem>
+            <LinkItem>
+                <Link href="/sai-baba">Sai Baba</Link>
+            </LinkItem>
+            <LinkItem>
+                <Link href="https://www.saiparivarfoundation.org/guruji.html" target={"_blank"}>Guruji</Link>
+            </LinkItem>
+            <LinkItem>
+                <Link href="/AboutUs">About Us</Link>
+            </LinkItem>
+            <LinkItem>
+                <Link href="https://www.saiparivarfoundation.org/TempleParking.pdf" target={"_blank"}>Event Parking</Link>
+            </LinkItem>
+            <LinkItem>
+                <Link href="https://www.paypal.com/paypalme/SaiParivarFoundation" target={"_blank"}>Donate</Link>
+            </LinkItem>
           <Marginer />
           <Accessibility />
         </LinksWrapper>

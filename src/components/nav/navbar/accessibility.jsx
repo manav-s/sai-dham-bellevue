@@ -54,8 +54,8 @@ const VolunteerButton = styled.button`
 export function Accessibility(props) {
   return (
     <AccessibilityContainer>
-      <DonateButton>Donate</DonateButton>
-      <VolunteerButton>Volunteer</VolunteerButton>
+      {/*<DonateButton>Donate</DonateButton>
+      <VolunteerButton>Volunteer</VolunteerButton>*/}
     </AccessibilityContainer>
   );
 }

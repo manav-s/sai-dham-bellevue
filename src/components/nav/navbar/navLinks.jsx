@@ -38,21 +38,24 @@ const Link = styled.a`
   font-size: inherit;
 `;
 
-export function NavLinks(props) {
+export function NavLinks() {
   return (
     <NavLinksContainer>
       <LinksWrapper>
         <LinkItem>
-          <Link href="#">About us</Link>
+            <Link href="/sai-baba">Sai Baba</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="/sai-baba">Sai Baba</Link>
+          <Link href="https://www.saiparivarfoundation.org/guruji.html" target={"_blank"}>Guruji</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Calendar</Link>
+          <Link href="/AboutUs">About Us</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Guruji</Link>
+          <Link href="https://www.saiparivarfoundation.org/TempleParking.pdf" target={"_blank"}>Event Parking</Link>
+        </LinkItem>
+        <LinkItem>
+          <Link href="https://www.paypal.com/paypalme/SaiParivarFoundation" target={"_blank"}>Donate</Link>
         </LinkItem>
       </LinksWrapper>
     </NavLinksContainer>
