@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaWhatsapp, FaFacebook, FaMapMarkedAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -28,10 +29,12 @@ function Footer() {
           <div className="w-full md:w-1/3">
             <h2 className="text-xl font-bold mb-2">Quick Links</h2>
             <ul>
-              <li className="mb-2"><a href="/" className="text-gray-200 hover:text-white">Home</a></li>
-              <li className="mb-2"><a href="https://www.saiparivarfoundation.org/about.html" target={"_blank"}>Sai Baba</a></li>
-              <li className="mb-2"><a href="https://www.saiparivarfoundation.org/mission.html" target={"_blank"}>About us</a></li>
-              <li className="mb-2"><a href="https://www.paypal.com/paypalme/SaiParivarFoundation"  target={"_blank"} className="text-gray-200 hover:text-white">Donate</a></li>
+              <li className="mb-2"><Link to="/">Home</Link></li>
+              <li className="mb-2"><Link to="/sai-baba">Sai Baba</Link></li>
+              <li className="mb-2"><Link to="/guruji">Guruji</Link></li>
+              <li className="mb-2"> <Link to="/AboutUs">About us</Link></li>
+              <li className="mb-2"><a href="https://www.paypal.com/paypalme/SaiParivarFoundation" target={"_blank"}
+                                      className="text-gray-200 hover:text-white">Donate</a></li>
             </ul>
           </div>
         </div>

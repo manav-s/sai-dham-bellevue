@@ -1,5 +1,5 @@
 import React from "react";
-import BabaBlue from "../../assets/images/BabaBlue.png"; // Adjust the path if necessary
+import BabaBlue from "../assets/images/BabaBlue.png"; // Adjust the path if necessary
 
 import { FaFire, FaBookOpen, FaRegCalendarAlt } from "react-icons/fa";
 
@@ -26,7 +26,7 @@ const features = [
 ];
 
 
-const Section1 = () => {
+const Summary = () => {
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -80,4 +80,4 @@ const Section1 = () => {
   )
 }
 
-export default Section1
+export default Summary

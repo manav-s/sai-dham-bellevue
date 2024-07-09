@@ -1,11 +1,12 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer.tsx";
-import Home from "./components/home/Home.tsx";
+import Home from "./components/Home.tsx";
 import PageNotFound from './components/PageNotFound.tsx';
 import { Navbar } from "./components/nav/navbar";
 import SaiBaba from "./components/sai-baba.tsx";
 import AboutUs from "./components/AboutUs.tsx";
+import Guruji from './components/guruji.tsx';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/sai-baba" element={<SaiBaba />} />
             <Route path="/AboutUs" element={<AboutUs />} />
+            <Route path="/guruji" element={<Guruji />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>

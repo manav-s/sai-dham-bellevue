@@ -28,11 +28,13 @@ const LogoText = styled.h2`
 
 export function Logo(props) {
   return (
+   <a href="/">
     <LogoWrapper>
       <LogoImg>
         <img src={SaiLogo}/>
       </LogoImg>
       <LogoText>Shirdi Sai Dham</LogoText>
     </LogoWrapper>
+    </a>
   );
 }
