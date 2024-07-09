@@ -1,5 +1,5 @@
 import React from "react";
-import BabaBlue from "../../assets/images/BabaBlue.png"; // Adjust the path if necessary
+import BabaBlue from "../assets/images/BabaBlue.png"; // Adjust the path if necessary
 
 import { FaFire, FaBookOpen, FaRegCalendarAlt } from "react-icons/fa";
 
