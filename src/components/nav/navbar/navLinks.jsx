@@ -46,7 +46,7 @@ export function NavLinks() {
             <Link href="/sai-baba">Sai Baba</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="https://www.saiparivarfoundation.org/guruji.html" target={"_blank"}>Guruji</Link>
+          <Link href="/guruji">Guruji</Link>
         </LinkItem>
         <LinkItem>
           <Link href="/AboutUs">About Us</Link>
