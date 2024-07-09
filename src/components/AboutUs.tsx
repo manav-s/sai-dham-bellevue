@@ -30,6 +30,9 @@ const AboutUs = () => {
                     <div className="lg:pr-8 lg:pt-4">
                         <div className="lg:max-w-lg">
                             <p className="mt-3 text-3xl font-bold tracking-tight text-red-900 sm:text-4xl">
+                                About us-
+                            </p>
+                            <p className="mt-6 text-lg leading-8 text-red-600">
                                 We are a non-profit organization registered in the state of Washington.
                             </p>
                             <p className="mt-6 text-lg leading-8 text-red-600">
@@ -37,7 +40,9 @@ const AboutUs = () => {
                                 and Saburi (patience).
                             </p>
                             <li>The Sai Age and be a part of Sai-ism, as He is the Master of the Age.</li>
-                            <li>Spread the message of love, purity and sanctifying the lives in the service of Lord Shirdi Sai.</li>
+                            <li>Spread the message of love, purity and sanctifying the lives in the service of Lord
+                                Shirdi Sai.
+                            </li>
                             <br/>
                             <h2 className="text-base font-semibold leading-7 text-orange-600">
                                 Activities
