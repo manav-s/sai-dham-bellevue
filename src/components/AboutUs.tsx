@@ -1,12 +1,12 @@
 import React from "react";
 import Baba from "../assets/images/Temple.jpg";
 
-import { FaBookOpen } from "react-icons/fa";
+import {FaBookOpen, FaFire, FaRegCalendarAlt} from "react-icons/fa";
 
 const Activities = [
     {
         name: "Sai Sandhya - every Thursday & Saturday 6:00 PM.",
-        icon: FaBookOpen,
+        icon: FaFire,
     },
     {
         name: "Satsang - every Thursday & Saturday 6:30 PM.",
@@ -18,7 +18,7 @@ const Activities = [
     },
     {
         name: "Food and clothes drives to help distribute among the poor and needy.",
-        icon: FaBookOpen,
+        icon: FaRegCalendarAlt,
     }
 ];
 
