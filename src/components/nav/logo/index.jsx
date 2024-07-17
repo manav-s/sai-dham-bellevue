@@ -33,7 +33,7 @@ export function Logo(props) {
       <LogoImg>
         <img src={SaiLogo}/>
       </LogoImg>
-      <LogoText>Shirdi Sai Dham</LogoText>
+      <LogoText>Shirdi Sai Dham, Bellevue, WA</LogoText>
     </LogoWrapper>
     </a>
   );
