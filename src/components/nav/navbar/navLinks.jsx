@@ -49,7 +49,7 @@ export function NavLinks() {
                 <a href={"/guruji"}>Guruji</a>
             </LinkItem>
             <LinkItem>
-                <Link href="/events">Events</Link>
+                <Link href={"/events"}>Events</Link>
             </LinkItem>
             <LinkItem>
                 <a href={"/AboutUs"}>About us</a>
