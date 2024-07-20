@@ -91,7 +91,7 @@ const Contact = () => {
               <div className="lg:pr-8 lg:pt-4">
                 <div className="lg:max-w-lg">
                   <p className="mt-2 text-3xl font-bold tracking-tight text-red-900 sm:text-4xl">
-                    Contact Us
+                    Contact Us -- Please Try Again
                   </p>
                   <p className="mt-6 text-lg leading-8 text-red-600">
                   We read all feedback and are always looking to improve.</p>
@@ -104,27 +104,29 @@ const Contact = () => {
                 </div>
               </div>
 
-              <form onSubmit={submit} className="h-[40rem] flex mt-6 justify-center lg:justify-start ">
-                  <div className="mb-2 w-full">
-                     <Label className="dark:text-black" htmlFor="email4" value="Your email" />
-                  </div>
-                  <TextInput id="email4" type="email" icon={HiMail}   onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
+              <form onSubmit={submit} className="flex mt-6 justify-center lg:justify-start ">
+                     <div className="max-w-2xl mx-auto p-4">
+                        <div className="mb-2 w-full">
+                           <Label className="dark:text-black" htmlFor="email4" value="Your email" />
+                        </div>
+                        <TextInput id="email4" type="email" icon={HiMail}   onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
 
-                  <div className="mb-2 w-full">
-                     <Label className="dark:text-black" htmlFor="email4" value="Phone Number (optional)" />
-                  </div>
-                  <TextInput id="phone-input" type="tel" icon={CiPhone} onChange={(e) => setPhone(e.target.value)} placeholder="123-456-7890" />
+                        <div className="mb-2 w-full">
+                           <Label className="dark:text-black" htmlFor="email4" value="Phone Number (optional)" />
+                        </div>
+                        <TextInput id="phone-input" type="tel" icon={CiPhone} onChange={(e) => setPhone(e.target.value)} placeholder="123-456-7890" />
 
-                  <div className="mb-2 block">
-                     <Label className="dark:text-black" htmlFor="comment" value="Your message" />
-                  </div>
-                  <Textarea id="comment" onChange={(e) => setMessage(e.target.value)} placeholder="Leave a comment..." required rows={4} />
+                        <div className="mb-2 block">
+                           <Label className="dark:text-black" htmlFor="comment" value="Your message" />
+                        </div>
+                        <Textarea id="comment" onChange={(e) => setMessage(e.target.value)} placeholder="Leave a comment..." required rows={4} />
 
-                  <div className="mt-4">
-                     <Button /*onClick={verifyRecaptcha}*/ type="submit">Submit</Button>
-               
-                     {/* <ReCAPTCHA ref={recaptcha} onChange={handleToken} sitekey={`${process.env.NEXT_PUBLIC_REACT_APP_SITE_KEY}`} />  */}
-                  </div>
+                        <div className="mt-4">
+                              <Button /*onClick={verifyRecaptcha}*/ type="submit">Submit</Button>
+                           
+                              {/* <ReCAPTCHA ref={recaptcha} onChange={handleToken} sitekey={`${process.env.NEXT_PUBLIC_REACT_APP_SITE_KEY}`} />  */}
+                        </div>
+                     </div>
                </form>
             </div>
           </div>
