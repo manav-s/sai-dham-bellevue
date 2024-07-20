@@ -59,7 +59,7 @@ export function MobileNavLinks() {
                 <Link href="https://www.saiparivarfoundation.org/guruji.html" target={"_blank"}>Guruji</Link>
             </LinkItem>
             <LinkItem>
-                <Link href="https://www.saiparivarfoundation.org/mission.html" target={"_blank"}>About us</Link>
+                <Link href="/events">Events</Link>
             </LinkItem>
             <LinkItem>
                 <Link href="https://www.saiparivarfoundation.org/TempleParking.pdf" target={"_blank"}>Event Parking</Link>
