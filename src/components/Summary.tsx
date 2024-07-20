@@ -1,26 +1,38 @@
 import React from "react";
-import BabaBlue from "../assets/images/BabaBlue.png"; // Adjust the path if necessary
+import Baba from "../assets/images/BabaSmall.jpeg"; // Adjust the path if necessary
 
 import { FaFire, FaBookOpen, FaRegCalendarAlt } from "react-icons/fa";
 
 // Represents a list of features relevant to the Mandir
 const features = [
   {
+    name: "Temple Timing",
+    description:
+        "Every day (6 PM - 9 PM), Sai Sandhya - every Thursday & Saturday 6:30 PM.",
+    icon: FaFire,
+  },
+  {
     name: "Daily Aarti",
     description:
-      "Join us for the daily Dhup/Shej aarti , 108 name chanting and prayer. Experience the spiritual ambiance and divine connection.",
+        "Daily Dhup/Shej aarti , 108 name chanting and prayer.",
+    icon: FaFire,
+  },
+  {
+    name: "Thursday Satsang",
+    description:
+        "Meditation, Palki, Bhajans, Prasadam",
     icon: FaFire,
   },
   {
     name: "Festivals and Celebrations",
     description:
-      "Enjoy the vibrant and colorful events on special days of the year that bring the community together.",
+        "Ram Navami, Guru Purnima, Maha Samadhi Day, Temple Anniversary.",
     icon: FaRegCalendarAlt,
   },
   {
     name: "Spiritual Discourses",
     description:
-      "Attend enlightening spiritual sessions like Sai Satcharit and Guru Bhagvat.",
+        "Meditation, Recital of Sai Satcharit and Guru Bhagvat.",
     icon: FaBookOpen,
   },
 ];
@@ -41,7 +53,7 @@ const Summary = () => {
                 </p>
                 <p className="mt-6 text-lg leading-8 text-red-600">
                   Discover the peace and spirituality of the Temple.
-                  Join us for rituals, Satsang, and community events that bring us
+                  Join for rituals, Satsang, and community events to get
                   closer to the divine.
                 </p>
                 {/* Features List */}
@@ -67,7 +79,7 @@ const Summary = () => {
             {/* Mandir Interior Image */}
             <div className="flex justify-center lg:justify-start">
               <img
-                  src={BabaBlue}
+                  src={Baba}
                   alt="Mandir interior"
                   className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
                   width={2432}
