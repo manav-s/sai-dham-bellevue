@@ -63,7 +63,7 @@ const Contact = () => {
          setMessage("Phone: " + phone + "\nMessage:" + message)
       }
       // replace this with your own unique endpoint URL
-      fetch("https://formcarry.com/s/OwxezQ2E1wF", {
+      fetch("https://formcarry.com/s/w1iz9HauLmf", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
