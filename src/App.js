@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes} from "react-router-dom";
 import Footer from "./components/Footer.tsx";
 import Home from "./components/Home.tsx";
 import PageNotFound from './components/PageNotFound.tsx';
@@ -12,7 +12,7 @@ import Events from './components/events.tsx';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <div className="flex-grow">
@@ -29,7 +29,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
