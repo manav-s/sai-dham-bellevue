@@ -50,7 +50,6 @@ const Guruji = () => {
                            alt="guruji img"
                         />
                      </div>
-                     
                   ))}
                </Carousel>
                </div>

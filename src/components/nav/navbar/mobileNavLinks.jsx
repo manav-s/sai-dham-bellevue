@@ -53,13 +53,13 @@ export function MobileNavLinks() {
       {isOpen && (
         <LinksWrapper>
             <LinkItem>
-                <Link href="https://www.saiparivarfoundation.org/about.html" target={"_blank"}>Sai Baba</Link>
+                <a href={"/sai-baba"}>Sai Baba</a>
             </LinkItem>
             <LinkItem>
-                <Link href="https://www.saiparivarfoundation.org/guruji.html" target={"_blank"}>Guruji</Link>
+                <a href={"/guruji"}>Guruji</a>
             </LinkItem>
             <LinkItem>
-                <Link href="https://www.saiparivarfoundation.org/mission.html" target={"_blank"}>About us</Link>
+                <a href={"/AboutUs"}>About us</a>
             </LinkItem>
             <LinkItem>
                 <Link href="https://www.saiparivarfoundation.org/TempleParking.pdf" target={"_blank"}>Event Parking</Link>

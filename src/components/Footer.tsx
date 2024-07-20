@@ -33,6 +33,7 @@ function Footer() {
               <li className="mb-2"><Link to="/sai-baba">Sai Baba</Link></li>
               <li className="mb-2"><Link to="/guruji">Guruji</Link></li>
               <li className="mb-2"> <Link to="/AboutUs">About us</Link></li>
+              <li className="mb-2"> <Link to="/contact">Contact us</Link></li>
               <li className="mb-2"><a href="https://www.paypal.com/paypalme/SaiParivarFoundation" target={"_blank"}
                                       className="text-gray-200 hover:text-white">Donate</a></li>
             </ul>
