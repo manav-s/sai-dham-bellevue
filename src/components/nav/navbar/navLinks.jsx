@@ -41,24 +41,30 @@ const Link = styled.a`
 export function NavLinks() {
   return (
     <NavLinksContainer>
-      <LinksWrapper>
-        <LinkItem>
-          <a href={"/sai-baba"}>Sai Baba</a>
-      </LinkItem>
-        <LinkItem>
-          <a href={"/guruji"}>Guruji</a>
-        </LinkItem>
-        </LinkItem>
-        <LinkItem>
-          <a href={"/AboutUs"}>About us</a>
-        </LinkItem>
-        <LinkItem>
-          <Link href="https://www.saiparivarfoundation.org/TempleParking.pdf" target={"_blank"}>Event Parking</Link>
-        </LinkItem>
-        <LinkItem>
-          <Link href="https://www.paypal.com/paypalme/SaiParivarFoundation" target={"_blank"}>Donate</Link>
-        </LinkItem>
-      </LinksWrapper>
+        <LinksWrapper>
+            <LinkItem>
+                <a href={"/sai-baba"}>Sai Baba</a>
+            </LinkItem>
+            <LinkItem>
+                <a href={"/guruji"}>Guruji</a>
+            </LinkItem>
+            <LinkItem>
+                <Link href="/events">Events</Link>
+            </LinkItem>
+            <LinkItem>
+                <a href={"/AboutUs"}>About us</a>
+            </LinkItem>
+            <LinkItem>
+                <a href={"/contact"}>Contact us</a>
+            </LinkItem>
+            <LinkItem>
+                <Link href="https://www.saiparivarfoundation.org/TempleParking.pdf" target={"_blank"}>Event
+                    Parking</Link>
+            </LinkItem>
+            <LinkItem>
+                <Link href="https://www.paypal.com/paypalme/SaiParivarFoundation" target={"_blank"}>Donate</Link>
+            </LinkItem>
+        </LinksWrapper>
     </NavLinksContainer>
   );
 }

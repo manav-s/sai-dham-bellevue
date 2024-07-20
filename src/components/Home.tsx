@@ -1,7 +1,7 @@
 import React from "react";
 
 import Summary from "./Summary.tsx";
-import Events from "./Events.tsx";
+import Festivals from "./Festivals.tsx";
 import SaiBaba from "./sai-baba.tsx";
 import AboutUs from "./AboutUs.tsx";
 import Guruji from "./guruji.tsx";
@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
       <Summary />
-      <Events />
+      <Festivals />
       <SaiBaba />
         <Guruji />
       <AboutUs />
