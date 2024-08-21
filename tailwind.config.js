@@ -7,6 +7,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
     flowbite.content(),
     flowbite.plugin(),
+    
   ],
   theme: {
     extend: {},

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Accessibility } from "./accessibility";
 import { MenuToggle } from "./menuToggle";
+import { Link } from "react-router-dom";
 
 const NavLinksContainer = styled.div`
   height: 100%;
@@ -34,7 +35,7 @@ const LinkItem = styled.li`
   margin-bottom: 10px;
 `;
 
-const Link = styled.a`
+const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
   font-size: inherit;
@@ -52,21 +53,28 @@ export function MobileNavLinks() {
       <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
       {isOpen && (
         <LinksWrapper>
-            <LinkItem>
-                <a href={"/sai-baba"}>Sai Baba</a>
-            </LinkItem>
-            <LinkItem>
-                <a href={"/guruji"}>Guruji</a>
-            </LinkItem>
-            <LinkItem>
-                <a href={"/AboutUs"}>About us</a>
-            </LinkItem>
-            <LinkItem>
-                <Link href="https://www.saiparivarfoundation.org/TempleParking.pdf" target={"_blank"}>Event Parking</Link>
-            </LinkItem>
-            <LinkItem>
-                <Link href="https://www.paypal.com/paypalme/SaiParivarFoundation" target={"_blank"}>Donate</Link>
-            </LinkItem>
+          <LinkItem>
+            <StyledLink to="/sai-baba">Sai Baba</StyledLink>
+          </LinkItem>
+          <LinkItem>
+            <StyledLink to="/guruji">Guruji</StyledLink>
+          </LinkItem>
+          <LinkItem>
+            <StyledLink to="/events">Events</StyledLink>
+          </LinkItem>
+          <LinkItem>
+            <StyledLink to="/AboutUs">About us</StyledLink>
+          </LinkItem>
+          <LinkItem>
+            <a href="https://www.saiparivarfoundation.org/TempleParking.pdf" target="_blank">
+              Event Parking
+            </a>
+          </LinkItem>
+          <LinkItem>
+            <a href="https://www.paypal.com/paypalme/SaiParivarFoundation" target="_blank">
+              Donate
+            </a>
+          </LinkItem>
           <Marginer />
           <Accessibility />
         </LinksWrapper>

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const NavLinksContainer = styled.div`
   height: 100%;
@@ -32,30 +33,41 @@ const LinkItem = styled.li`
   }
 `;
 
-const Link = styled.a`
+const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
   font-size: inherit;
 `;
+
 
 export function NavLinks() {
   return (
     <NavLinksContainer>
       <LinksWrapper>
         <LinkItem>
-          <a href={"/sai-baba"}>Sai Baba</a>
-      </LinkItem>
-        <LinkItem>
-          <a href={"/guruji"}>Guruji</a>
+          <StyledLink to="/sai-baba">Sai Baba</StyledLink>
         </LinkItem>
         <LinkItem>
-          <a href={"/AboutUs"}>About us</a>
+          <StyledLink to="/guruji">Guruji</StyledLink>
         </LinkItem>
         <LinkItem>
-          <Link href="https://www.saiparivarfoundation.org/TempleParking.pdf" target={"_blank"}>Event Parking</Link>
+          <StyledLink to="/events">Events</StyledLink>
         </LinkItem>
         <LinkItem>
-          <Link href="https://www.paypal.com/paypalme/SaiParivarFoundation" target={"_blank"}>Donate</Link>
+          <StyledLink to="/AboutUs">About us</StyledLink>
+        </LinkItem>
+        <LinkItem>
+          <StyledLink to="/contact">Contact us</StyledLink>
+        </LinkItem>
+        <LinkItem>
+          <a href="https://www.saiparivarfoundation.org/TempleParking.pdf" target="_blank">
+            Event Parking
+          </a>
+        </LinkItem>
+        <LinkItem>
+          <a href="https://www.paypal.com/paypalme/SaiParivarFoundation" target="_blank">
+            Donate
+          </a>
         </LinkItem>
       </LinksWrapper>
     </NavLinksContainer>
