@@ -8,7 +8,7 @@ import SaiBaba from "./components/sai-baba.tsx";
 import AboutUs from "./components/AboutUs.tsx";
 import Guruji from './components/guruji.tsx';
 import Contact from './components/ContactUs.tsx'
-import Events from './components/events.tsx';
+import Events from './components/Events.tsx';
 
 function App() {
   return (
