@@ -60,7 +60,7 @@ export function MobileNavLinks() {
             <StyledLink to="/guruji">Guruji</StyledLink>
           </LinkItem>
           <LinkItem>
-            <StyledLink to="/events">Events</StyledLink>
+            <StyledLink to="/Pictures">Events</StyledLink>
           </LinkItem>
           <LinkItem>
             <StyledLink to="/AboutUs">About us</StyledLink>

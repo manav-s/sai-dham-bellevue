@@ -8,7 +8,7 @@ import SaiBaba from "./components/sai-baba.tsx";
 import AboutUs from "./components/AboutUs.tsx";
 import Guruji from './components/guruji.tsx';
 import Contact from './components/ContactUs.tsx'
-import Events from './components/Events.tsx';
+import Pictures from './components/Pictures.tsx';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             <Route path="/AboutUs" element={<AboutUs />} />
             <Route path="/guruji" element={<Guruji />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/events" element={<Events />} />
+            <Route path="/Pictures" element={<Pictures />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>

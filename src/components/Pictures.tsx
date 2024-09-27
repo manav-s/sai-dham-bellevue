@@ -1,57 +1,54 @@
-import React from "react";
+import React from 'react'
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+const baseurl = "https://www.saiparivarfoundation.org/";
+const events = "images/Events/";
+
 const paduka = [{
-    "id": 1,
-    "url": "https://www.saiparivarfoundation.org/images/Events/PadukaSeva/1.jpeg",
- }, {
-    "id": 2,
-    "url": "https://www.saiparivarfoundation.org/images/Events/PadukaSeva/2.jpeg",
- }, {
-    "id": 3,
-    "url": "https://www.saiparivarfoundation.org/images/Events/PadukaSeva/3.jpeg",
- }, {
-    "id": 4,
-    "url": "https://www.saiparivarfoundation.org/images/Events/PadukaSeva/4.jpeg",
- }, {
-    "id": 5,
-    "url": "https://www.saiparivarfoundation.org/images/Events/PadukaSeva/5.jpeg",
- }
+  "id": 1,
+}, {
+  "id": 2,
+}, {
+  "id": 3,
+}, {
+  "id": 4,
+}, {
+  "id": 5,
+}
 ];
 
 const food = [{
-  "id": 1,
-  "url": "https://www.saiparivarfoundation.org/images/Events/Charitable/Food Drive/FD1.jpeg",
+"id": 1,
+"url": "Charitable/Food Drive/FD1.jpeg",
 }, {
-  "id": 2,
-  "url": "https://www.saiparivarfoundation.org/images/Events/Charitable/Food Drive/FD2.jpeg",
+"id": 2,
+"url": "Charitable/Food Drive/FD2.jpeg",
 }, {
-  "id": 3,
-  "url": "https://www.saiparivarfoundation.org/images/Events/Charitable/Food Drive/FD3.jpeg",
+"id": 3,
+"url": "Charitable/Food Drive/FD3.jpeg",
 }
 ];
 
 const temple = [{
-  "id": 1,
-  "url": "https://www.saiparivarfoundation.org/images/Events/Temple/2024/T1.jpeg",
+"id": 1,
+"url": "Temple/2024/T1.jpeg",
 }, {
-  "id": 2,
-  "url": "https://www.saiparivarfoundation.org/images/Events/Temple/2024/T2.jpeg",
+"id": 2,
+"url": "Temple/2024/T2.jpeg",
 }, {
-  "id": 3,
-  "url": "https://www.saiparivarfoundation.org/images/Events/Temple/2024/T3.jpeg",
+"id": 3,
+"url": "Temple/2024/T3.jpeg",
 }, {
-  "id": 4,
-  "url": "https://www.saiparivarfoundation.org/images/Events/Temple/2024/T4.jpeg",
+"id": 4,
+"url": "Temple/2024/T4.jpeg",
 }, {
-  "id": 5,
-  "url": "https://www.saiparivarfoundation.org/images/Events/Temple/2024/T5.jpeg",
+"id": 5,
+"url": "Temple/2024/T5.jpeg",
 }
 ];
-
-const Events = () => {
+const Pictures = () => {
     return (
       <div className="bg-white">
           <div className="overflow-hidden bg-white py-24 sm:py-32">
@@ -65,7 +62,7 @@ const Events = () => {
                         {paduka.map(image => (
                             <div className="flex justify-center lg:justify-start box" key={image.id}>
                                 <img
-                                src={image.url}
+                                src={baseurl + events+ "PadukaSeva/"+image.id+ ".jpeg"}
                                 width={2432}
                                 height={1442}
                                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
@@ -83,7 +80,7 @@ const Events = () => {
                         {food.map(image => (
                             <div className="flex justify-center lg:justify-start box" key={image.id}>
                                 <img
-                                src={image.url}
+                                src={baseurl + events+ image.url}
                                 width={2432}
                                 height={1442}
                                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
@@ -101,7 +98,7 @@ const Events = () => {
                         {temple.map(image => (
                             <div className="flex justify-center lg:justify-start box" key={image.id}>
                                 <img
-                                src={image.url}
+                                src={baseurl + events+ image.url}
                                 width={2432}
                                 height={1442}
                                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
@@ -121,4 +118,4 @@ const Events = () => {
     )
 }
 
-export default Events
+export default Pictures
