@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const baseurl = "https://www.saiparivarfoundation.org/";
 const events = "images/Events/";
 
-const ids = [1,2,3,4,5,6,7,8,9,10];
+const ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 const Pictures = () => {
     return (
       <div className="bg-white">
@@ -33,13 +33,31 @@ const Pictures = () => {
                     </Carousel>
                   </div>
 
+                  <p className="mt-6 text-lg leading-8 text-red-600">Cultural</p>
+                  <div className="flex mt-6 justify-center lg:justify-start">
+                    <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true}>
+                        {ids.map(id => (
+                            <div className="flex justify-center lg:justify-start box" key={id}>
+                                <img
+                                src={baseurl + events+ "Cultural/" + id + ".jpg"}
+                                width={2432}
+                                height={1442}
+                                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+                                alt=""
+                                />
+                            </div>
+                            
+                        ))}
+                    </Carousel>
+                  </div>
+
                   <p className="mt-6 text-lg leading-8 text-red-600">Food Drive</p>
                   <div className="flex mt-6 justify-center lg:justify-start">
                     <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true}>
                         {ids.map(id => (
                             <div className="flex justify-center lg:justify-start box" key={id}>
                                 <img
-                                src={baseurl + events+ "Food Drive/FD" + id + ".jpeg"}
+                                src={baseurl + events+ "Food Drive/" + id + ".jpg"}
                                 width={2432}
                                 height={1442}
                                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
@@ -69,13 +87,13 @@ const Pictures = () => {
                     </Carousel>
                   </div>
 
-                  <p className="mt-6 text-lg leading-8 text-red-600">Temple Aarti</p>
+                  <p className="mt-6 text-lg leading-8 text-red-600">Arati at Home</p>
                   <div className="flex mt-6 justify-center lg:justify-start">
                     <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true}>
                         {ids.map(id => (
                             <div className="flex justify-center lg:justify-start box" key={id}>
                                 <img
-                                src={baseurl + events+ "Temple/2024/T" + id + ".jpeg"}
+                                src={baseurl + "images/Arati at Home/2016/" + id + ".jpg"}
                                 width={2432}
                                 height={1442}
                                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"

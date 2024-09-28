@@ -1,8 +1,13 @@
 import React from "react";
 import Baba from "../assets/images/Sai.png"; // Adjust the path if necessary
-
 import { FaBookOpen } from "react-icons/fa";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+const baseurl = "https://www.saiparivarfoundation.org/";
+const events = "images/Baba/";
+
+const ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 // Represents a list of features relevant to the Mandir
 const features = [
   {
@@ -83,22 +88,28 @@ const SaiBaba = () => {
                       </dt>
                       <br />
                       {/* Feature Description */}
-                      <dd className="inline">{feature.description}</dd>
+                      <dd className="inline">{feature.name}</dd>
                     </div>
                   ))}
                 </dl>
               </div>
             </div>
-            {/* Mandir Interior Image */}
-            <div className="flex justify-center lg:justify-start">
-              <img
-                src={Baba}
-                alt="Mandir interior"
-                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
-                width={2432}
-                height={1442}
-              />
-            </div>
+                  <div className="flex mt-6 justify-center lg:justify-start">
+                    <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true}>
+                        {ids.map(id => (
+                            <div className="flex justify-center lg:justify-start box" key={id}>
+                                <img
+                                src={baseurl + events+ id + ".JPG"}
+                                width={2432}
+                                height={1442}
+                                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+                                alt=""
+                                />
+                            </div>
+                            
+                        ))}
+                    </Carousel>
+                  </div>
           </div>
         </div>
       </div>
