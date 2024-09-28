@@ -6,48 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const baseurl = "https://www.saiparivarfoundation.org/";
 const events = "images/Events/";
 
-const paduka = [{
-  "id": 1,
-}, {
-  "id": 2,
-}, {
-  "id": 3,
-}, {
-  "id": 4,
-}, {
-  "id": 5,
-}
-];
-
-const food = [{
-"id": 1,
-"url": "Charitable/Food Drive/FD1.jpeg",
-}, {
-"id": 2,
-"url": "Charitable/Food Drive/FD2.jpeg",
-}, {
-"id": 3,
-"url": "Charitable/Food Drive/FD3.jpeg",
-}
-];
-
-const temple = [{
-"id": 1,
-"url": "Temple/2024/T1.jpeg",
-}, {
-"id": 2,
-"url": "Temple/2024/T2.jpeg",
-}, {
-"id": 3,
-"url": "Temple/2024/T3.jpeg",
-}, {
-"id": 4,
-"url": "Temple/2024/T4.jpeg",
-}, {
-"id": 5,
-"url": "Temple/2024/T5.jpeg",
-}
-];
+const ids = [1,2,3,4,5,6,7,8,9,10];
 const Pictures = () => {
     return (
       <div className="bg-white">
@@ -59,10 +18,10 @@ const Pictures = () => {
                   <p className="mt-6 text-lg leading-8 text-red-600">Paduka Seva</p>
                   <div className="flex mt-6 justify-center lg:justify-start">
                     <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true}>
-                        {paduka.map(image => (
-                            <div className="flex justify-center lg:justify-start box" key={image.id}>
+                        {ids.map(id => (
+                            <div className="flex justify-center lg:justify-start box" key={id}>
                                 <img
-                                src={baseurl + events+ "PadukaSeva/"+image.id+ ".jpeg"}
+                                src={baseurl + events+ "PadukaSeva/" + id + ".jpeg"}
                                 width={2432}
                                 height={1442}
                                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
@@ -77,10 +36,28 @@ const Pictures = () => {
                   <p className="mt-6 text-lg leading-8 text-red-600">Food Drive</p>
                   <div className="flex mt-6 justify-center lg:justify-start">
                     <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true}>
-                        {food.map(image => (
-                            <div className="flex justify-center lg:justify-start box" key={image.id}>
+                        {ids.map(id => (
+                            <div className="flex justify-center lg:justify-start box" key={id}>
                                 <img
-                                src={baseurl + events+ image.url}
+                                src={baseurl + events+ "Food Drive/FD" + id + ".jpeg"}
+                                width={2432}
+                                height={1442}
+                                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+                                alt=""
+                                />
+                            </div>
+                            
+                        ))}
+                    </Carousel>
+                  </div>
+
+                  <p className="mt-6 text-lg leading-8 text-red-600">Cloth Drive</p>
+                  <div className="flex mt-6 justify-center lg:justify-start">
+                    <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true}>
+                        {ids.map(id => (
+                            <div className="flex justify-center lg:justify-start box" key={id}>
+                                <img
+                                src={baseurl + events+ "Clothes Drive/" + id + ".jpg"}
                                 width={2432}
                                 height={1442}
                                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
@@ -95,10 +72,10 @@ const Pictures = () => {
                   <p className="mt-6 text-lg leading-8 text-red-600">Temple Aarti</p>
                   <div className="flex mt-6 justify-center lg:justify-start">
                     <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true}>
-                        {temple.map(image => (
-                            <div className="flex justify-center lg:justify-start box" key={image.id}>
+                        {ids.map(id => (
+                            <div className="flex justify-center lg:justify-start box" key={id}>
                                 <img
-                                src={baseurl + events+ image.url}
+                                src={baseurl + events+ "Temple/2024/T" + id + ".jpeg"}
                                 width={2432}
                                 height={1442}
                                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
@@ -116,6 +93,6 @@ const Pictures = () => {
         </div>
       </div>
     )
-}
+  }
 
 export default Pictures
