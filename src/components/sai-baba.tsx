@@ -86,9 +86,6 @@ const SaiBaba = () => {
                         />
                         {feature.name}
                       </dt>
-                      <br />
-                      {/* Feature Description */}
-                      <dd className="inline">{feature.name}</dd>
                     </div>
                   ))}
                 </dl>
