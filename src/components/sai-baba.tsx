@@ -1,5 +1,4 @@
 import React from "react";
-import Baba from "../assets/images/Sai.png"; // Adjust the path if necessary
 import { FaBookOpen } from "react-icons/fa";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";

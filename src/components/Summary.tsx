@@ -1,6 +1,4 @@
 import React from "react";
-import Baba from "../assets/images/BabaSmall.jpeg"; // Adjust the path if necessary
-
 import { FaFire, FaBookOpen, FaRegCalendarAlt } from "react-icons/fa";
 
 import { Carousel } from "react-responsive-carousel";
@@ -83,33 +81,22 @@ const Summary = () => {
                 </dl>
               </div>
             </div>
-            {/* Mandir Interior Image */}
-            <div className="flex justify-center lg:justify-start">
-              <img
-                  src={Baba}
-                  alt="Mandir interior"
-                  className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
-                  width={2432}
-                  height={1442}
-              />
+            <div className="flex mt-6 justify-center lg:justify-start">
+              <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true}>
+                  {ids.map(id => (
+                      <div className="flex justify-center lg:justify-start box" key={id}>
+                          <img
+                          src={baseurl + events + id + ".jpeg"}
+                          width={2432}
+                          height={1442}
+                          className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+                          alt=""
+                          />
+                      </div>
+                      
+                  ))}
+              </Carousel>
             </div>
-            <p className="mt-6 text-lg leading-8 text-red-600">Temple Aarti</p>
-                  <div className="flex mt-6 justify-center lg:justify-start">
-                    <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true}>
-                        {ids.map(id => (
-                            <div className="flex justify-center lg:justify-start box" key={id}>
-                                <img
-                                src={baseurl + events + id + ".jpeg"}
-                                width={2432}
-                                height={1442}
-                                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
-                                alt=""
-                                />
-                            </div>
-                            
-                        ))}
-                    </Carousel>
-                  </div>
           </div>
         </div>
       </div>

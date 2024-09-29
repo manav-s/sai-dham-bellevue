@@ -54,24 +54,27 @@ export function MobileNavLinks() {
       {isOpen && (
         <LinksWrapper>
           <LinkItem>
-            <StyledLink to="/sai-baba">Sai Baba</StyledLink>
+            <StyledLink to="/sai-baba">SaiBaba</StyledLink>
           </LinkItem>
           <LinkItem>
             <StyledLink to="/guruji">Guruji</StyledLink>
           </LinkItem>
           <LinkItem>
-            <StyledLink to="/Pictures">Events</StyledLink>
+            <StyledLink to="/Pictures">Gallery</StyledLink>
           </LinkItem>
           <LinkItem>
             <StyledLink to="/AboutUs">About us</StyledLink>
           </LinkItem>
           <LinkItem>
-            <a href="https://www.saiparivarfoundation.org/TempleParking.pdf" target="_blank">
+            <StyledLink to="/contact">Contact</StyledLink>
+          </LinkItem>
+          <LinkItem>
+            <a href="https://www.saiparivarfoundation.org/TempleParking.pdf" target="_blank" rel="noreferrer">
               Event Parking
             </a>
           </LinkItem>
           <LinkItem>
-            <a href="https://www.paypal.com/paypalme/SaiParivarFoundation" target="_blank">
+            <a href="https://www.paypal.com/paypalme/SaiParivarFoundation" target="_blank" rel="noreferrer">
               Donate
             </a>
           </LinkItem>
