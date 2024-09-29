@@ -61,7 +61,7 @@ export function NavLinks() {
         </LinkItem>
         <LinkItem>
           <a href="https://www.saiparivarfoundation.org/TempleParking.pdf" target="_blank" rel="noreferrer">
-            Event Parking
+            Parking
           </a>
         </LinkItem>
         <LinkItem>

@@ -34,7 +34,7 @@ function Footer() {
                 <FaMapMarkedAlt className="w-6 h-6"/>
               </a>
               <a href="https://maps.app.goo.gl/C5matwznBA3wccsv8" target={"_blank"} rel="noreferrer"
-                 className="text-gray-950 hover:text-gray-500"> {/* Extended Parking */}
+                 className="text-gray-950 hover:text-gray-500"> {/* Parking */}
                 <FaAddressCard className="w-6 h-6"/>
               </a>
             </div>

@@ -13,6 +13,12 @@ const Festivals = () => {
                 </p>
                 <p className="mt-6 text-lg leading-8 text-gray-300">
                     <a
+                        href="https://www.saiparivarfoundation.org/Mahasamadhi.pdf"
+                        className="text-sm font-semibold leading-6 text-white"
+                    >Details</a>
+                </p>
+                <p className="mt-6 text-lg leading-8 text-gray-300">
+                    <a
                         href="https://www.saiparivarfoundation.org/TempleParking.pdf"
                         className="text-sm font-semibold leading-6 text-white"
                     >Temple Parking</a>
