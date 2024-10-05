@@ -1,8 +1,12 @@
 import React from "react";
-import Baba from "../assets/images/BabaSmall.jpeg"; // Adjust the path if necessary
-
 import { FaFire, FaBookOpen, FaRegCalendarAlt } from "react-icons/fa";
 
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+const baseurl = "https://www.saiparivarfoundation.org/images/2024/";
+
+const ids = [1,2,3,4,5,6,7,8,9,10];
 // Represents a list of features relevant to the Mandir
 const features = [
   {
@@ -76,15 +80,21 @@ const Summary = () => {
                 </dl>
               </div>
             </div>
-            {/* Mandir Interior Image */}
-            <div className="flex justify-center lg:justify-start">
-              <img
-                  src={Baba}
-                  alt="Mandir interior"
-                  className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
-                  width={2432}
-                  height={1442}
-              />
+            <div className="flex mt-6 justify-center lg:justify-start">
+              <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true}>
+                  {ids.map(id => (
+                      <div className="flex justify-center lg:justify-start box" key={id}>
+                          <img
+                          src={baseurl + id + ".jpeg"}
+                          width={2432}
+                          height={1442}
+                          className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+                          alt=""
+                          />
+                      </div>
+                      
+                  ))}
+              </Carousel>
             </div>
           </div>
         </div>

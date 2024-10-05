@@ -3,20 +3,11 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const images = [{
-      "id": 1,
-      "url": "https://static.wixstatic.com/media/31892e_08ffb49ed68b4b6da457d65898d2e73c~mv2.jpg/v1/fill/w_500,h_596,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/31892e_08ffb49ed68b4b6da457d65898d2e73c~mv2.jpg",
-   }, {
-      "id": 2,
-      "url": "https://static.wixstatic.com/media/31892e_84ad35282c78459d85f80e0d69771909~mv2_d_5616_3744_s_4_2.jpg/v1/fill/w_640,h_836,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/31892e_84ad35282c78459d85f80e0d69771909~mv2_d_5616_3744_s_4_2.jpg",
-   }, {
-      "id": 3,
-      "url": "https://static.wixstatic.com/media/31892e_636d88c9eee243178d33c26a781da50c~mv2.jpg/v1/fill/w_597,h_768,al_c,q_85,enc_auto/31892e_636d88c9eee243178d33c26a781da50c~mv2.jpg",
-   }, {
-      "id": 4,
-      "url": "https://online.pubhtml5.com/zwpc/vznn/files/large/2.jpg",
-   }
-];
+const baseurl = "https://www.saiparivarfoundation.org/";
+const gurji = "images/GuruJi/";
+
+const ids = [1,2,3,4,5,6,7,8,9,10];
+
 const Guruji = () => {
    return (
       <div className="overflow-hidden bg-white py-24 sm:py-32">
@@ -37,13 +28,12 @@ const Guruji = () => {
                   </a>
                 </div>
               </div>
-              {/* Mandir Interior Image */}
               <div className="flex mt-6 justify-center lg:justify-start">
                <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true}>
-                  {images.map(image => (
-                     <div className="flex justify-center lg:justify-start box" key={image.id}>
+                  {ids.map(id => (
+                     <div className="flex justify-center lg:justify-start box" key={id}>
                         <img
-                           src={image.url}
+                           src={baseurl + gurji+ "GuruJi" + id + ".jpg"}
                            width={2432}
                            height={1442}
                            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
