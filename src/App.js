@@ -9,6 +9,8 @@ import AboutUs from "./components/AboutUs.tsx";
 import Guruji from './components/guruji.tsx';
 import Contact from './components/ContactUs.tsx'
 import Pictures from './components/Pictures.tsx';
+import History from './components/History.tsx';
+import Charrity from './components/Charrity.tsx';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
             <Route path="/guruji" element={<Guruji />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/Pictures" element={<Pictures />} />
+            <Route path="/History" element={<History />} />
+            <Route path="/Charrity" element={<Charrity />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>

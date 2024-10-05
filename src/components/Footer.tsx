@@ -13,6 +13,8 @@ function Footer() {
             <p>Bellevue, WA 98005</p>
             <h2 className="text-xl font-bold mb-2">---------</h2>
             <ul>
+              <li className="mb-2"><Link to="/History">History</Link></li>
+              <li className="mb-2"><Link to="/Charrity">Charrity</Link></li>
               <li className="mb-2"><Link to="/contact">Contact us</Link></li>
               <li className="mb-2"><a href="https://www.paypal.com/paypalme/SaiParivarFoundation" target={"_blank"} rel="noreferrer"
                                       className="text-gray-200 hover:text-white">Donate</a></li>
