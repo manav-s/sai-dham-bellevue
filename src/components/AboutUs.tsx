@@ -3,8 +3,7 @@ import {FaBookOpen, FaFire, FaRegCalendarAlt} from "react-icons/fa";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const baseurl = "https://www.saiparivarfoundation.org/";
-const events = "images/Temple/";
+const baseurl = "https://www.saiparivarfoundation.org/images/Temple/";
 
 const ids = [1,2,3,4,5,6,7,8,9,10];
 
@@ -74,7 +73,7 @@ const AboutUs = () => {
                         {ids.map(id => (
                             <div className="flex justify-center lg:justify-start box" key={id}>
                                 <img
-                                src={baseurl + events+ id + ".JPG"}
+                                src={baseurl + id + ".JPG"}
                                 width={2432}
                                 height={1442}
                                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"

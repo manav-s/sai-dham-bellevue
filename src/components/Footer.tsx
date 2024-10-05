@@ -45,7 +45,7 @@ function Footer() {
               <li className="mb-2"><Link to="/">Home</Link></li>
               <li className="mb-2"><Link to="/sai-baba">Sai Baba</Link></li>
               <li className="mb-2"><Link to="/guruji">Guruji</Link></li>
-              <li className="mb-2"><Link to="/events">Events</Link></li>
+              <li className="mb-2"><Link to="/Pictures">Gallery</Link></li>
               <li className="mb-2"><Link to="/AboutUs">About us</Link></li>
             </ul>
           </div>
