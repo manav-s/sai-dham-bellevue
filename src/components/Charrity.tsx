@@ -92,7 +92,7 @@ const Pictures = () => {
                         {ids.map(id => (
                             <div className="flex justify-center lg:justify-start box" key={id}>
                                 <img
-                                src={baseurl + "Home/" + id + ".jpg"}
+                                src={baseurl + "Home/" + id + ".JPG"}
                                 width={2432}
                                 height={1442}
                                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
