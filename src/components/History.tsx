@@ -69,6 +69,24 @@ const Pictures = () => {
                     </Carousel>
                   </div>
 
+                  <p className="mt-6 text-lg leading-8 text-red-600">Arati at Home</p>
+                    <div className="flex mt-6 justify-center lg:justify-start">
+                      <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true}>
+                          {ids.map(id => (
+                              <div className="flex justify-center lg:justify-start box" key={id}>
+                                  <img
+                                  src={baseurl + "Home/" + id + ".JPG"}
+                                  width={2432}
+                                  height={1442}
+                                  className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+                                  alt=""
+                                  />
+                              </div>
+                              
+                          ))}
+                      </Carousel>
+                    </div>
+
                   <p className="mt-6 text-lg leading-8 text-red-600">Temple</p>
                   <div className="flex mt-6 justify-center lg:justify-start">
                     <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true}>
