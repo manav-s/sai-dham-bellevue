@@ -15,7 +15,7 @@ function Footer() {
             <ul>
               <li className="mb-2"><Link to="/History">History</Link></li>
               <li className="mb-2"><Link to="/Charrity">Charrity</Link></li>
-              <li className="mb-2"><Link to="/contact">Contact us</Link></li>
+              <li className="mb-2"><Link to="/Feedback">Feedback</Link></li>
               <li className="mb-2"><a href="https://www.paypal.com/paypalme/SaiParivarFoundation" target={"_blank"} rel="noreferrer"
                                       className="text-gray-200 hover:text-white">Donate</a></li>
               <li className="mb-2"><a href="https://www.signupgenius.com/go/10C0A4EA4A92BA2FDC16-52046656-sponsor#/" target={"_blank"} rel="noreferrer"

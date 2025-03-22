@@ -18,6 +18,18 @@ const Festivals = () => {
                         className="text-sm font-semibold leading-6 text-white"
                     >Click to Signup</a>
                 </p>
+                <h2 className="text-lg font-bold tracking-tight text-white sm:text-4xl">
+                    Ram Navmi 2025!
+                </h2>
+                <p className="mt-6 text-lg leading-8 text-white-300">
+                05 April, Saturday -
+                </p>
+                <p className="mt-6 text-lg leading-8 text-white-300">
+                    <a
+                        href="https://www.saiparivarfoundation.org/images/RamNavami/RamNavmi-2025.pdf"
+                        className="text-sm font-semibold leading-6 text-white"
+                    >Click for details</a>
+                </p>
             </div>
         </div>
         </div>

@@ -8,7 +8,7 @@ import React from "react";
 
 
 
-const Contact = () => {
+const Feedback = () => {
 
    const [email, setEmail] = useState("");
    const [message, setMessage] = useState("");
@@ -210,16 +210,7 @@ const Contact = () => {
          </div>
          </Flowbite>
     )
-
-
-
-
-
-
-
-
-
 }
 
 
-export default Contact;
+export default Feedback;
