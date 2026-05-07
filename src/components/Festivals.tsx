@@ -19,14 +19,20 @@ const Festivals = () => {
                     >Click to Signup</a>
                 </p>
                 <h2 className="text-lg font-bold tracking-tight text-white sm:text-4xl">
-                    Ram Navmi 2025!
+                Maha Samadhi Day ! - Dussehra 2025!
                 </h2>
                 <p className="mt-6 text-lg leading-8 text-white-300">
-                05 April, Saturday -
+                2 October, Thursday -
                 </p>
                 <p className="mt-6 text-lg leading-8 text-white-300">
                     <a
-                        href="https://www.saiparivarfoundation.org/images/RamNavami/RamNavmi-2025.pdf"
+                        href="https://www.saiparivarfoundation.org/#/Feedback"
+                        className="text-sm font-semibold leading-6 text-white"
+                    >Click to contact</a>
+                </p>
+                <p className="mt-6 text-lg leading-8 text-white-300">
+                    <a
+                        href="https://www.saiparivarfoundation.org/Event.pdf"
                         className="text-sm font-semibold leading-6 text-white"
                     >Click for details</a>
                 </p>

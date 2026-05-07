@@ -9,8 +9,8 @@ import Guruji from "./guruji.tsx";
 function Home() {
   return (
     <>
-      <Festivals />
       <Summary />
+      <Festivals />
       <SaiBaba />
         <Guruji />
       <AboutUs />

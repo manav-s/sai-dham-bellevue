@@ -15,7 +15,6 @@ const Festivals = () => {
                 <div className="col-md-4 d-flex">
                     <div className="contact-info-entity bg-theme-light">
                         <div className="entity-icon"><i className="fas fa-mobile"></i></div>
-                        <div className="entity-value"><a color='fff' href="tel:425-483-7115">(425) 394-9173</a></div>
                         <h4 className="entity-title">phone</h4>
                     </div>
                 </div>
