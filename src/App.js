@@ -12,6 +12,7 @@ import Feedback from './components/Feedback.tsx'
 import Pictures from './components/Pictures.tsx';
 import History from './components/History.tsx';
 import Charrity from './components/Charrity.tsx';
+import Donation from './components/Donation.tsx';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/Pictures" element={<Pictures />} />
             <Route path="/History" element={<History />} />
             <Route path="/Charrity" element={<Charrity />} />
+            <Route path="/Donation" element={<Donation />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>

@@ -63,14 +63,7 @@ export function NavLinks() {
           <StyledLink to="/Feedback">Feedback</StyledLink>
         </LinkItem>
         <LinkItem>
-          <a href="https://www.saiparivarfoundation.org/TempleParking.pdf" target="_blank" rel="noreferrer">
-            Parking
-          </a>
-        </LinkItem>
-        <LinkItem>
-          <a href="https://www.paypal.com/paypalme/SaiParivarFoundation" target="_blank" rel="noreferrer">
-            Donate
-          </a>
+            <StyledLink to="/Donation">Donation</StyledLink>
         </LinkItem>
       </LinksWrapper>
     </NavLinksContainer>

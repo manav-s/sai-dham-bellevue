@@ -36,10 +36,19 @@ const AboutUs = () => {
                             <p className="mt-3 text-3xl font-bold tracking-tight text-red-900 sm:text-4xl">
                                 About us-
                             </p>
-                            <p className="mt-6 text-lg leading-8 text-red-600">
+                            <p className="mt-6 text-lg leading-8 text-black-600">
                                 We are a non-profit organization registered in the state of Washington.
                             </p>
-                            <p className="mt-6 text-lg leading-8 text-red-600">
+                            <p className="mt-6 text-lg leading-8 text-black-600">
+                                Shirdi Sai Dham Temple is a spiritual and cultural sanctuary dedicated to the teachings and blessings of Shirdi Sai Baba. The temple serves as a peaceful place of worship for devotees seeking guidance, faith, and inner transformation through prayer, meditation, and service.
+
+Rooted in the timeless message of “Sabka Malik Ek” (One God governs all), the temple welcomes people from all backgrounds, fostering unity, compassion, and humility. Regular prayers, bhajans, aarti, and spiritual discourses are conducted to help devotees deepen their connection with Sai Baba’s teachings.
+
+Beyond worship, the temple actively engages in community service and charitable initiatives, supporting those in need and promoting values of kindness, selflessness, and seva (service). It also hosts religious festivals and cultural events that bring the community together in devotion and celebration.
+
+Shirdi Sai Dham Temple stands as a beacon of faith, hope, and harmony—offering a sacred space for reflection, devotion, and spiritual growth.
+                            </p>
+                            <p className="mt-6 text-lg leading-8 text-black-600">
                                 OUR MISSION: To spread Shirdi Sai Baba’s philosophy and teachings, Shraddha (devotion)
                                 and Saburi (patience).
                             </p>
